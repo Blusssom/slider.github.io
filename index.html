@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <section class="products">
+        <div class="container">
+            <h2 class="products__title">Продукты</h2>
+            <div class="products__wrapper-scrollbar">
+                <div class="scrollbar"></div>
+                <div class="products__wrapper products__swiper">
+                    <div class="products__text-wrapper">
+                        <div class="product">
+                            <h3 class="product__title fw700"><span class="font-red">ОС</span><span class="font-grey">нова</span></h3>
+                            <p class="product__text">построение защищённых автоматизированных систем (АС ЗИ), обрабатывающих конфиденциальную информацию и персональные данные.</p>
+                        </div>
+                        <div class="product">
+                            <h3 class="product__title">Лира-Р</h3>
+                            <p class="product__text">построение защищённых информационных систем, обрабатывающих информацию ограниченного распространения.</p>
+                        </div>
+                        <div class="product">
+                            <h3 class="product__title">Стрелец</h3>
+                            <p class="product__text">построение защищённых автоматизированных систем (АС ЗИ), обрабатывающих информацию, содержащую сведения, составляющие государственную тайну.</p>
+                        </div>
+                        <div class="proposal">
+                            <p class="proposal__text">Мы открыты и можно сориентироваться по цене</p>
+                            <button class="proposal__btn">  Узнать предварительную стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="images">
+                        <div class="image">
+                            <img src="./img/mac.png" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="./img/mac.png" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="./img/mac.png" alt="">
+                        </div>
+                    </div>
+                </div> <!-- .products__wrapper -->
+                <div class="swiper-pagination products__pagination"></div>
+            </div> <!-- .products__wrapper-scrollbar -->
+        </div> <!-- .container -->
+        <img class="frame frame-up" src="./img/frame.svg" alt="">
+        <img class="frame frame-down" src="./img/frame.svg" alt="">
+    </section>
+</body>
+</html>
